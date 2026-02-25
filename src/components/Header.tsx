@@ -1,18 +1,19 @@
 import React from 'react';
 
 const Header: React.FC = () => {
-    return (
-        <header className="bg-blue-500 text-white p-4">
-            <h1 className="text-2xl font-bold">My Personal Background</h1>
-            <nav>
-                <ul className="flex space-x-4">
-                    <li><a href="#about" className="hover:underline">About</a></li>
-                    <li><a href="#projects" className="hover:underline">Projects</a></li>
-                    <li><a href="#contact" className="hover:underline">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    );
+  return (
+    <header className="flex items-center justify-between bg-blue-500 text-white p-4">
+      <img
+        src="https://picsum.photos/48/48"
+        alt="Profile"
+        className="w-12 h-12 rounded-full object-cover"
+      />
+      <nav className="flex gap-6">
+        <a href="#projects" className="hover:underline">Projects</a>
+        <a href="#tech-stack" className="hover:underline">Tech stack</a>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
