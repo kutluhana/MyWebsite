@@ -6,6 +6,7 @@
 - Use Tailwind CSS for styling; apply classes directly in JSX.
 - Follow standard React patterns for state and props; keep components focused and reusable.
 - Don't use TypeScript's `any` type; prefer specific types or generics for better type safety.
+- For React components, the top-level returned JSX tag should start on the same line as the `return` statement, without unnecessary parentheses around the JSX (e.g. `return <div...`).
 
 ## Architecture
 - Keep the code Next.js convertible; avoid any features or architectural style that are incompatible with Next.js.

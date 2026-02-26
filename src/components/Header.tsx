@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
-  return (
-    <header className="flex flex-row items-end">
+  return <header className="flex flex-row items-end">
       <img
         src="https://picsum.photos/48/48"
         alt="Profile"
@@ -13,8 +12,7 @@ const Header: React.FC = () => {
         <Link to="/projects" className="hover:underline">Projects</Link>
         <Link to="/tech-stack" className="hover:underline">Tech stack</Link>
       </nav>
-    </header>
-  );
+    </header>;
 };
 
 export default Header;

@@ -43,8 +43,7 @@ const technologies = [
 ];
 
 const TechStack: React.FC = () => {
-  return (
-    <main className="p-8 max-w-6xl mx-auto">
+  return <main className="p-8 max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold mb-8 text-center">My Tech Stack</h1>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         {technologies.map((tech, index) => (
@@ -63,8 +62,7 @@ const TechStack: React.FC = () => {
           </div>
         ))}
       </div>
-    </main>
-  );
+    </main>;
 };
 
 export default TechStack;
