@@ -1,10 +1,5 @@
 # Project Guidelines
 
-## Change Approval
-- Do not change any file without the user's approval.
-- Before applying edits: describe the planned diff or show the exact change, then wait for the user to approve (e.g. "yes", "go ahead", "approve") before making the edit.
-- If the user has not explicitly approved, do not write, edit, or delete files.
-
 ## Code Style
 - Use TypeScript with React; .tsx for components, .ts for utilities.
 - Functional components with hooks; no class components.
