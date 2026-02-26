@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -9,8 +10,8 @@ const Header: React.FC = () => {
         className="w-12 h-12 rounded-full object-cover"
       />
       <nav className="">
-        <a href="#projects" className="hover:underline">Projects</a>
-        <a href="#tech-stack" className="hover:underline">Tech stack</a>
+        <Link to="/projects" className="hover:underline">Projects</Link>
+        <Link to="/tech-stack" className="hover:underline">Tech stack</Link>
       </nav>
     </header>
   );
