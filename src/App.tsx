@@ -15,7 +15,7 @@ const App: React.FC = () => {
           <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-        <div className="mt-auto"><Footer /></div>
+        <div className=""><Footer /></div>
       </div>
     </Router>;
 };
