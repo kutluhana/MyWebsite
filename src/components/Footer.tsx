@@ -1,20 +1,12 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
-  // Generate a random number for the photo URL to get a different image each load
-  const randomId = Math.floor(Math.random() * 1000);
 
-  return <footer className="bg-gray-800 text-white p-4 mt-8">
+  return <footer className="bg-white border-t border-gray-200 text-gray-800 p-4 mt-auto items-center">
       <div className="container mx-auto text-center">
-        <h3 className="text-lg font-semibold mb-2">Random Photo</h3>
-        <img
-          src={`https://picsum.photos/400/200?random=${randomId}`}
-          alt="Random photo"
-          className="mx-auto rounded shadow-lg"
-        />
-        <p className="mt-2 text-sm">© 2026 Personal Background Webpage</p>
+        <p className="text-sm text-gray-500">© 2026 Personal Background Webpage</p>
       </div>
-    </footer>;
+    </footer>
 };
 
 export default Footer;

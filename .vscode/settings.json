@@ -7,5 +7,7 @@
     "typescriptreact": "javascript"
   },
   "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.experimental.configFile": null
+  "tailwindCSS.experimental.configFile": null,
+  "tailwindCSS.showPixelEquivalents": true,
+  "tailwindCSS.hovers": true,
 }
