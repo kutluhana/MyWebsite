@@ -6,7 +6,7 @@ import Projects from './sections/Projects';
 import Footer from './sections/Footer';
 
 const App: React.FC = () => {
-  return <div className="App min-h-screen flex flex-col bg-black">
+  return <div className="App min-h-screen min-w-0 w-full max-w-[100vw] flex flex-col overflow-x-hidden bg-black">
       <Header />
       <Introduction />
       <Projects />
