@@ -23,6 +23,7 @@ const Projects: React.FC = () => {
           bullets={project.bullets}
           isExpanded={expandedProject === project.title}
           onMouseEnter={() => setExpandedProject(project.title)}
+          onClick={() => setExpandedProject(expandedProject === project.title ? null : project.title)}
         />
       ))}
     </section>

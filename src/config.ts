@@ -65,8 +65,8 @@ const defaultProjects: ProjectData[] = [
 const defaultTechStack: TechStackData = {
   backend: ["Java", "Kotlin", "Python", "Spring Boot", "Kafka", "PostgreSQL", "MongoDB", "Keycloak"],
   frontend: ["TypeScript", "React", "Tailwind CSS"],
-  "devops + observability": ["Docker", "Kubernetes", "Maven", "Jenkins", "Git", "ELK"],
-  ai: ["Cursor", "Claude Code", "OpenClaw"],
+  "DevOps & Observability": ["Docker", "Kubernetes", "Maven", "Jenkins", "Git", "ELK"],
+  "AI Tools": ["Cursor", "Claude Code", "OpenClaw"],
 };
 
 const defaultLinks: LinkData[] = [
