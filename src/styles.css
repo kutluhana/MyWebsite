@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
-
 html, body {
   width: 100%;
   overflow-x: clip;
