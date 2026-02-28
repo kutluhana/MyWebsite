@@ -5,7 +5,7 @@ import { config } from '../config';
 const Projects: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
 
-  return <section id="projects" className="w-full flex flex-col items-start overflow-x-hidden py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8">
+  return <section id="projects" className="w-full flex flex-col items-start overflow-x-hidden py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32">
     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-amber-50">
       {config.projectsTitle}
     </h1>

@@ -3,17 +3,7 @@ import { config } from '../config';
 
 const scrollToSection = (e: React.MouseEvent, id: string) => {
   e.preventDefault();
-  const element = document.getElementById(id);
-  if (element) {
-    const headerHeight = document.querySelector('header')?.getBoundingClientRect().height || 80;
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  }
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
 
 const navLinkClass = "block py-2 sm:py-3 px-2 sm:px-4 min-h-10 sm:min-h-11 flex items-center justify-center rounded-lg font-medium text-xs sm:text-sm md:text-base text-amber-50 hover:text-amber-200 hover:bg-amber-50/5 transition-colors cursor-pointer [&_*]:cursor-pointer";
