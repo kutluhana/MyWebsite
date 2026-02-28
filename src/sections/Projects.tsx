@@ -34,26 +34,26 @@ const projects = [
 
 const Projects: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
-  const containerRef = useRef<HTMLElement>(null);
+  const projectsListRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as Node;
-      if (expandedProject && containerRef.current && !containerRef.current.contains(target)) {
+      if (expandedProject && projectsListRef.current && !projectsListRef.current.contains(target)) {
         setExpandedProject(null);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside, true);
+    return () => document.removeEventListener('mousedown', handleClickOutside, true);
   }, [expandedProject]);
 
-  return <main id="projects" ref={containerRef} className="flex-1 w-full flex flex-col items-center overflow-x-hidden">
+  return <main id="projects" className="flex-1 w-full flex flex-col items-center overflow-x-hidden">
       <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center text-gray-900">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center text-blue-600">
           My Projects
         </h1>
         
-        <div className="flex flex-col w-full gap-0">
+        <div ref={projectsListRef} className="flex flex-col w-full gap-0">
           {projects.map((project) => (
             <Project
               key={project.title}
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
               date={project.date}
               backgroundImage={project.backgroundImage}
               isExpanded={expandedProject === project.title}
-              onToggle={() => setExpandedProject((prev) => prev === project.title ? null : project.title)}
+              onClick={() => setExpandedProject((prev) => prev === project.title ? null : project.title)}
             />
           ))}
         </div>
