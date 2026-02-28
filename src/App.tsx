@@ -8,10 +8,13 @@ import Footer from './sections/Footer';
 const App: React.FC = () => {
   return <div className="App min-h-screen min-w-0 w-full max-w-[100vw] flex flex-col overflow-x-hidden bg-black">
       <Header />
-      <Introduction />
-      <Projects />
-      <TechStack />
+      <div className="px-[20%]">
+        <Introduction />
+        <Projects />
+        <TechStack />
+      </div>
       <Footer />
+      
     </div>;
 };
 
