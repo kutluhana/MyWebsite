@@ -5,10 +5,10 @@ const Header: React.FC = () => {
       <a href="#home" className="shrink-0 min-w-[2.75rem] min-h-[2.75rem] rounded-full flex" aria-label="Go to home">
         <text className="text-2xl font-bold text-amber-50">Jonathan Smith</text>
       </a>
-      <nav className="flex gap-3 sm:gap-5 md:gap-6 text-gray-700 font-medium text-sm sm:text-base">
-        <a href="#projects" className="hover:text-blue-600 transition-colors py-2 px-3 -mx-3 min-h-[2.75rem] flex items-center">Projects</a>
-        <a href="#tech-stack" className="hover:text-blue-600 transition-colors py-2 px-3 -mx-3 min-h-[2.75rem] flex items-center">Tech stack</a>
-        <a href="#links" className="hover:text-blue-600 transition-colors py-2 px-3 -mx-3 min-h-[2.75rem] flex items-center">Links</a>
+      <nav className="flex gap-3 sm:gap-5 md:gap-6 text-amber-50 font-medium text-sm sm:text-base">
+        <a href="#projects" className="hover:text-amber-200 transition-colors py-2 px-3 -mx-3 min-h-[2.75rem] flex items-center">Projects</a>
+        <a href="#tech-stack" className="hover:text-amber-200 transition-colors py-2 px-3 -mx-3 min-h-[2.75rem] flex items-center">Tech stack</a>
+        <a href="#about" className="hover:text-amber-200 transition-colors py-2 px-3 -mx-3 min-h-[2.75rem] flex items-center">About</a>
       </nav>
     </header>;
 };
