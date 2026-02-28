@@ -14,12 +14,3 @@
 ## Commit Guidelines
 - Keep commit messages lower case and concise, ideally under 50 characters.
 - Use the present tense for commit messages (e.g., "add feature" instead of "added feature").
-
-## Knowledge Tracking Rule
-- Monitor our conversation for technical gaps or "how does this work" questions.
-- Maintain a file at the root called `LEARNING_DEBT.md`.
-- When a new concept is introduced, add it to `LEARNING_DEBT.md` with:
-  1. The Name of the concept.
-  2. A "Plain English" definition.
-  3. A code snippet showing how it's used in THIS project.
-- After adding an entry, say so in your reply (e.g. "Added to LEARNING_DEBT.md.") so the user can see it was done.
