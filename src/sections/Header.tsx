@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header: React.FC = () => {
-  return <header className="sticky top-0 z-50 backdrop-blur-sm p-4 px-4 sm:px-6 md:px-8 flex flex-row items-center justify-between gap-4 w-full max-w-[100vw] overflow-x-hidden">
+  return <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-sm p-4 px-4 sm:px-6 md:px-8 flex flex-row items-center justify-between gap-4 w-full max-w-[100vw] overflow-x-clip">
       <a href="#home" className="shrink-0 min-w-[2.75rem] min-h-[2.75rem] rounded-full flex" aria-label="Go to home">
         <text className="text-2xl font-bold text-amber-50">Jonathan Smith</text>
       </a>
