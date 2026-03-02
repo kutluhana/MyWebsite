@@ -85,7 +85,7 @@ function parseJson<T>(value: string | undefined, fallback: T): T {
 }
 
 export const config = {
-  siteName: import.meta.env.VITE_SITE_NAME ?? "Jonathan Smith",
+  siteName: import.meta.env.VITE_SITE_NAME ?? "Kutluhan Palalıoğlu",
   siteTitle: import.meta.env.VITE_SITE_TITLE ?? "Software Developer",
   introText: import.meta.env.VITE_INTRO_TEXT ?? "Developer based in Istanbul, Turkey. I specialize in backend development with a focus on Java and Spring Boot.",
   aboutParagraph1: import.meta.env.VITE_ABOUT_PARAGRAPH_1 ?? "I'm a software developer who builds systems that scale. I care about clean architecture, maintainable code, and solving real problems—whether that's streamlining airline loyalty programs, processing payments, or helping people track their spending.",
@@ -97,7 +97,7 @@ export const config = {
   navProjects: import.meta.env.VITE_NAV_PROJECTS ?? "Projects",
   navTechStack: import.meta.env.VITE_NAV_TECH_STACK ?? "Tech stack",
   navAbout: import.meta.env.VITE_NAV_ABOUT ?? "About",
-  footerCopyright: import.meta.env.VITE_FOOTER_COPYRIGHT ?? "© 2026 Personal Background Webpage",
+  footerCopyright: import.meta.env.VITE_FOOTER_COPYRIGHT ?? "© 2026 Kutluhan Palalıoğlu",
   projects: parseJson<ProjectData[]>(import.meta.env.VITE_PROJECTS, defaultProjects),
   techStack: parseJson<TechStackData>(import.meta.env.VITE_TECH_STACK, defaultTechStack),
   links: parseJson<LinkData[]>(import.meta.env.VITE_LINKS, defaultLinks),
